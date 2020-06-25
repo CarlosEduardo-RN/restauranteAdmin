@@ -1,0 +1,21 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "site": "kaleautomacao",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+      
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "./src/index.js"
+      }
+    ]
+  }
+}
